@@ -1,4 +1,4 @@
-**Git branch**
+**Git branch v2**
 
 A branch in Git is a snapshot of your project's history at a particular point in time. You can create multiple branches to work on different features or bug fixes without affecting the main codebase. When you're finished working on a branch, you can merge it back into the main codebase.
 
