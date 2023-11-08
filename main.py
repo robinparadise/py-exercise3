@@ -6,14 +6,21 @@ Exercise 3: Basic calculator
 
 import random
 
+
+  
 def guess_the_number():
-  """
-    Using loops, implement a guessing game.
-    Guess the number (1-10):
-    messages: Too low, Too high, Try again, Congratulations!
-  """
-  # fix code
-  print("Guess the number (1-10):")
+    targetNumber = random.randint(1, 10)
+
+    while True:
+        userGuess = int(input("Guess the number (1-10):"))
+
+        if userGuess == targetNumber:
+            print("Congratulations! You guessed the correct number.")
+            break
+        else:
+            print("Sorry, wrong guess. Try again.")
+
+
 
 
 def multiplication_table():
