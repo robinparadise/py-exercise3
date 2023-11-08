@@ -6,6 +6,8 @@ Exercise 3: Basic calculator
 
 import random
 
+
+  
 def guess_the_number():
   """
     Using loops, implement a guessing game.
