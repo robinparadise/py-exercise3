@@ -30,8 +30,14 @@ def multiplication_table():
   """
     Using a while/for loops, implement a multiplication table.
   """
-  # fix code
-  print("multiplication_table for {number}")
+  numUsuario = int(input(f"Ingrese el número a multiplicar: "))
+
+  print("Tabla de multiplicar del", numUsuario)
+
+  for i in range(1,11):
+     print( i, "x", numUsuario, "=", (i*numUsuario))
+
+  
 
 
 def basic_calculator():
