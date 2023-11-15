@@ -6,6 +6,8 @@ Exercise 3: Basic calculator
 
 import random
 
+
+  
 def guess_the_number():
   """
     Using loops, implement a guessing game.
@@ -13,8 +15,18 @@ def guess_the_number():
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
-  print("Guess the number (1-10):")
+  numAdivinar = random.randint(1, 10)
+  adivinado = False
 
+  while not adivinado:
+    numUsuario = int(input(f"Adivina el número (1-10): "))
+    if numUsuario == numAdivinar:
+        print(f"Felicidades, adivinaste el número {numAdivinar}")
+        adivinado = True
+    elif numUsuario < numAdivinar:
+        print("El número es mayor. Inténtalo de nuevo.")
+    else:
+        print("El número es menor. Inténtalo de nuevo.")
 
 def multiplication_table():
   """
@@ -23,22 +35,7 @@ def multiplication_table():
   # fix code
   print("multiplication_table for {number}")
 
-
-def basic_calculator():
-  """
-    Using a while/for loops, implement a basic calculator.
-    1. Enter the first number: 10
-    2. Enter an operator (+, -, *, /): +
-    3. Enter the second number: 20
-    4. print 10 + 20 => Result: 30
-  """
-  num1 = input("Enter the first number: ")
-  operator = input("Enter an operator (+, -, *, /): ")
-  num2 = input("Enter the second number: ")
-
-  result = None # fix code
-
-  print("{num1} {operator} {num2} => Result:", result)
+ 
 
 
 def main():
