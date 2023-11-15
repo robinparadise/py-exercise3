@@ -17,19 +17,22 @@ def adivina_numero():
                 print(f"Has adivinado el número {numero_aleatorio}.")
                 break
             else:
-                print("Número incorrecto, sigue intentandoló")
+                print("Número incorrecto, sigue intentándolo")
         except ValueError:
             print("Por favor, ingresa un número válido.")
 
-adivina_numero()
+    adivina_numero()
 #poner numero y continuar,
+
+
+
 """
     Using loops, implement a guessing game.
     Guess the number (1-10):
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
-  print("Guess the number (1-10):")
+print("Guess the number (1-10):")
 
 
 def multiplication_table():
