@@ -37,20 +37,29 @@ def multiplication_table():
 
 
 def basic_calculator():
-  """
-    Using a while/for loops, implement a basic calculator.
-    1. Enter the first number: 10
-    2. Enter an operator (+, -, *, /): +
-    3. Enter the second number: 20
-    4. print 10 + 20 => Result: 30
-  """
-  num1 = input("Enter the first number: ")
-  operator = input("Enter an operator (+, -, *, /): ")
-  num2 = input("Enter the second number: ")
+ while True:
+        try:
+            num1 = float(input("Enter the first number: "))
+            operator = input("Enter an operator (+, -, *, /): ")
+            num2 = float(input("Enter the second number: "))
 
-  result = None # fix code
+            # Realizar la operación según el operador ingresado
+            if operator == '+':
+                result = num1 + num2
+            elif operator == '-':
+                result = num1 - num2
+            elif operator == '*':
+                result = num1 * num2
+            elif operator == '/':
+                result = num1 / num2
+            else:
+                print("Operador no válido. Inténtalo de nuevo.")
+                continue  # Volver a solicitar la entrada
 
-  print("{num1} {operator} {num2} => Result:", result)
+            print(f"{num1} {operator} {num2} => Result: {result}")
+            break  # Salir del bucle mientras si la operación se realiza con éxito
+
+        except ValueError:
 
 
 def main():
