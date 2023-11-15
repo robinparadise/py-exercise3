@@ -13,7 +13,24 @@ def guess_the_number():
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
-  print("Guess the number (1-10):")
+input("Guess the number (1-10):")
+
+secret_number = random.randint(1, 10)
+    guess = 0
+
+    while guess != secret_number:
+        try:
+            guess = int(input("Guess the number (1-10): "))
+            if guess < secret_number:
+                print("Too low, try again.")
+            elif guess > secret_number:
+                print("Too high, try again.")
+            else:
+                print("Congratulations! You guessed the right number.")
+        except ValueError:
+            print("Please enter a valid number between 1 and 10.")
+
+guess_the_number()
 
 
 def multiplication_table():
@@ -21,7 +38,10 @@ def multiplication_table():
     Using a while/for loops, implement a multiplication table.
   """
   # fix code
-  print("multiplication_table for {number}")
+  input("multiplication_table for {number}")
+
+
+
 
 
 def basic_calculator():
